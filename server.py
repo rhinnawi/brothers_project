@@ -8,5 +8,13 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
+@app.route('/rani')
+def rani():
+    return render_template('rani.html')
+
+@app.route('/tammir')
+def tammir():
+    return render_template('tammir.html')
+
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
