@@ -4,17 +4,50 @@
     Rani's Portfolio
 {% endblock title %}
 
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/rani.css')}}">
+{% endblock css %}
+
 {% block header %}
     Welcome to Rani's Portfolio!
 {% endblock header %}
 
 {% block main %}
-<section>
-    <p>I'm learning to code without Codecademy! My goals include:</p>
-    <ol>
-        <li>Expand CSS skills</li>
-        <li>Learn JavaScript</li>
-        <li>Eventually earn React.js</li>
-    </ol>
-</section>
+<div class="container bg-secondary text-white border border-round-0">
+    <div class="row">
+        <div class="col d-flex flex-fill">
+            <div class="d-flex flex-column justify-content-around">
+                <div class="px-3 mt-auto align-items-center">
+                    <p>I'm learning to code without Codecademy! My goals include:</p>
+                    <ol>
+                        <li>Expand CSS skills</li>
+                        <li>Learn JavaScript</li>
+                        <li>Eventually earn React.js</li>
+                    </ol>    
+                </div>
+                <div class="my-auto mx-0 bg-warning flex-fill">
+                    <hr>
+                </div>
+                
+                <div class="pt-3 px-3 mb-auto">
+                    <p>My interests:</p>
+                    <ul>
+                        <li>Coding</li>
+                        <li>Learning Languages</li>
+                        <li>Tennis</li>
+                        <li>Playing video games</li>
+                        <li>Anything relating to Star Wars</li>
+                    </ul>    
+                </div>    
+            </div>   
+        </div>
+        <div class="col pt-3 px-3 align-self-center bg-warning">
+            <picture>
+                <img src="static/images/rani_portrait_toronto.jpeg" alt="Image of Rani in Toronto" class="img-fluid">
+                <figcaption class="text-center">This is what I look like.</figcaption>
+            </picture> 
+        </div> 
+    </div>
+    
+</div>
 {% endblock main %}

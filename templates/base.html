@@ -19,18 +19,22 @@
             </div>
         </header>
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="{{url_for('home')}}">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{url_for('rani')}}">Rani</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{url_for('tammir')}}">Tammir</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="{{url_for('home')}}">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="{{url_for('rani')}}">Rani</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="{{url_for('tammir')}}">Tammir</a></li>
             </ul>
         </nav>
 
-        <div class="container">
+        <br>
+
+        <div class="container"ß>
             <main>{% block main %}{% endblock main %}</main>
         </div>
         
+        <br>
+
         <!--TODO: format and add Tammir's info-->
         <footer>
             <div class="container-fluid bg-dark text-light text-center pt-3">
